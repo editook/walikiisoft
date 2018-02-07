@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <title>WalikiiSoft</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="software development">
+    <!--css libraries -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="icon" size="16x16" href="images/logito.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+
+
+<body ng-controller="controlador">
+
+    <div class="preloader">
+        <!-- recarga de pagina -->
+        <div class="sk-spinner sk-spinner-rotating-plane"></div>
+    </div>
+    <!-- barra navegador-->
+
+    <nav class="navbar navbar-default navbar-fixed-top templatemo-nav" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+                    </button>
+                <img class="container-fluid" src="images/log.jpg" alt="feature img" class="log">
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right text-uppercase">
+                    <li><a href="#inicio">{{t1}}</a></li>
+                    <li><a href="#hacemos">{{t2}}</a></li>
+                    <li><a href="#ejemplos">{{t3}}</a></li>
+                    <li><a href="#proyectos">{{t4}}</a></li>
+                    <li><a href="#contactos">{{t5}}</a></li>
+                    <li><button type="button" ng-click="setLanguage()" style="margin-top: 20px; margin-left: 5px;background: #ffffff;border: none;-webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+                        -moz-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+                        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);" class="btn btn-primary"><img src="images/{{namelanguage}}.png" style="height: 30px"></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- inicio -->
+    <section id="inicio">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 wow fadeIn" data-wow-delay="0.3s">
+                        <h1 class="text-upper">{{sp_p1_t1}}</h1>
+                        <p class="tm-white">{{sp_p1_1}}</p>
+                        <div class="container-fluid">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- indica -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="images/carusel/4.jpg" style="width:100%; height: 100%">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="images/carusel/5.jpg" style="width:100%; height: 100%">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="images/carusel/2.jpg" style="width:100%; height: 100%">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/carusel/3.jpg" style="width:100%; height: 100%">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/carusel/0.jpg" style="width:100%; height: 100%">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/carusel/1.jpg" style="width:100%; height: 100%">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/carusel/6.jpg" style="width:100%; height: 100%">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="quienesSomos" class="container-fluid">
+        <h2 class="text-upper">{{sp_p2_t1}}</h2>
+        <ul class="puntitos" class="container-fluid">
+            <li>
+                <p class="tm-white">{{sp_p2_1}}</p><br>
+            </li>
+            <li>
+                <p class="tm-white">{{sp_p2_2_1}}<a href="https://icpc.baylor.edu" target="_blank" style="color:rgb(77, 6, 243)"> ICPC </a>{{sp_p2_2_2}}.</p>
+            </li>
+        </ul>
+    </section>
+    <!-- principal-->
+    <section id="divider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                    <i class="fa fa-laptop"></i>
+                    <h3 class="text-uppercase">{{sp_p3_t1}}</h3>
+                    <p>{{sp_p3_1}}</p>
+                </div>
+                <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                    <i class="fa fa-sitemap"></i>
+                    <h3 class="text-uppercase">{{sp_p3_t3}}</h3>
+                    <p> {{sp_p3_3}}</p>
+                </div>
+                <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                    <i class="fa fa-font"></i>
+                    <h3 class="text-uppercase">{{sp_p3_t2}}</h3>
+                    <p>{{sp_p3_2}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- conocenos -->
+    <section id="hacemos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
+                    <h2 class="text-uppercase">{{sp_p4_0}}</h2>
+                    <p><i class="fa fa-code"></i>{{sp_p4_1}}</p>
+                    <p><i class="fa fa-mobile"></i>{{sp_p4_2}}</p>
+                    <p><i class="fa fa-desktop"></i>{{sp_p4_3}}</p>
+                    <p><i class="fa fa-database"></i>{{sp_p4_4}} </p>
+                    <p><i class="fa fa-anchor"></i>{{sp_p4_5}}</p>
+
+                </div>
+                <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <img src="images/woman.jpg" class="img-responsive" alt="feature img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hacemos2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
+                    <img src="images/home.jpg" class="img-responsive" alt="feature img">
+                </div>
+                <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <p><i class="fa fa-language"></i>{{sp_p5_1}}</p>
+                    <p><i class="fa fa-user"></i>{{sp_p5_2}}</p>
+                    <p><i class="fa fa-code-fork"></i>{{sp_p5_3}}</p>
+                    <p><i class="fa fa-video-camera"></i>{{sp_p5_4}}</p>
+                    <p><i class="fa fa-play"></i>{{sp_p5_4}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ejemplos metodologia -->
+    <section id="ejemplos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow bounceIn">
+                    <h2 class="text-uppercase">{{sp_p6_0}}</h2>
+                </div>
+                <div class="col-md-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="ejemplos active">
+                        <div class="ejemplos-title">
+                            <h4>{{sp_p6_1}}</h4>
+                        </div>
+                        <ul>
+                            <li>html5</li>
+                            <li>CSS3</li>
+                            <li>AngularJS</li>
+                            <li>Bootstrap</li>
+                            <li>Java Script</li>
+                            <li>Materialize design</li>
+                            <li>Python</li>
+                            <li>PHP</li>
+                            <li>Node js</li>
+
+                        </ul>
+                        <button class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#paginasWeb">{{sp_p6_2}}</button>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="ejemplos active">
+                        <div class="ejemplos-title">
+                            <h4>{{sp_p6_3}}</h4>
+                        </div>
+                        <ul>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>C</li>
+                            <li>Java Swing</li>
+                            <li>C#</li>
+                            <li>Python</li>
+                            <li>Assembler</li>
+                            <li>Java FX</li>
+                            <li>Prolog</li>
+                            <li>Arduino</li>
+                            <li>Bash</li>
+                        </ul>
+                        <button class="btn btn-primary text-uppercase">{{sp_p6_2}}</button>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeIn" data-wow-delay="0.6s">
+                    <div class="ejemplos active">
+                        <div class="ejemplos-title">
+                            <h4>{{sp_p6_4}}</h4>
+                        </div>
+                        <ul>
+                            <li>FildFly</li>
+                            <li>Apache</li>
+                            <li>Oracle</li>
+                            <li>GlassFish</li>
+                            <li>Maven</li>
+                            <li>Express</li>
+                        </ul>
+                        <button class="btn btn-primary text-uppercase">{{sp_p6_2}}</button>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="ejemplos active">
+                        <div class="ejemplos-title">
+                            <h4>{{sp_p6_5}}</h4>
+                        </div>
+                        <ul>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                            <li>Oracle</li>
+                        </ul>
+                        <button class="btn btn-primary text-uppercase">{{sp_p6_2}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- nuestros proyectos -->
+
+    <section id="proyectos">
+        <div class="container">
+            <h2 class="text-uppercase">{{sp_p7_0}}</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-12" data-wow-delay="0.3s">
+                    <div class="proyectos-title">
+                        <h4>{{sp_p6_1}}</h4>
+                    </div>
+                    <ul class="proyectos-li">
+                        <li style="align-content: center">
+                            <button class="btn btn-warning text-uppercase">{{sp_p7_1}}</button>
+                        </li>
+                        <li>
+                            <button class="btn btn-warning text-uppercase">{{sp_p7_2}}</button>
+                        </li>
+                        <li>
+                            <button class="btn btn-warning text-uppercase">{{sp_p7_3}}</button>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12" data-wow-delay="0.3s">
+                    <div class="proyectos-title">
+                        <h4>{{sp_p4_5}}</h4>
+                    </div>
+                    <ul class="proyectos-li">
+                        <li>
+                            <button class="btn btn-success text-uppercase">{{sp_p7_4}}</button>
+                        </li>
+                        <li>
+                            <button class="btn btn-success text-uppercase">{{sp_p7_5}}</button>
+                        </li>
+                        <li>
+                            <button class="btn btn-success text-uppercase">{{sp_p7_6}}</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12" data-wow-delay="0.3s">
+                    <div class="proyectos-title">
+                        <h4>{{sp_p4_2}}</h4>
+                    </div>
+                    <ul class="proyectos-li">
+                        <li>
+                            <button class="btn btn-danger text-uppercase">{{sp_p7_7}}</button>
+                        </li>
+                        <li>
+                            <button class="btn btn-danger text-uppercase">{{sp_p7_8}}</button>
+                        </li>
+                        <li>
+                            <button class="btn btn-danger text-uppercase">{{sp_p7_9}}</button>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contactos -->
+    <section id="contactos">
+
+        <div class="overlay">
+
+            <div class="container">
+                <h2 class="text-uppercase">{{sp_p8_0}}</h2>
+
+                <div class="row">
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <p>{{sp_p8_1}}</p>
+
+                        <address>
+								<p><i class="fa fa-map-marker"></i>Bolivia-cbba (av. heroinas {{ps_p10_0}} pasteur y meleanes #1024)</p>
+								<p><i class="fa fa-phone"></i> +591 60218175 - 60345678 - 70012773</p>
+                                <p><i class="fa fa-envelope-o"></i> walikisoft@gmail.com</p>
+                                <p><i class="fa fa-envelope-o"></i> contact@walikiisoft.com</p>
+							</address>
+                    </div>
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="contact-form">
+                            <form>
+                                <div class="col-md-6">
+                                    <input id="name" ng-keyup="getkeys($event)" class="form-control" placeholder="{{pl_p9_2}}">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" id="email" ng-keyup="getkeysEmail($event)" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" id="sudject" class="form-control" placeholder="{{pl_p9_3}}">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea class="form-control" id="description" placeholder="{{pl_p9_4}}" rows="4"></textarea>
+                                </div>
+                                <div class="col-md-8">
+                                    <button type="button" style=" width: 100%;
+                                    height: 50px;
+                                    background: #28a7e9;
+                                    font-size: 100%;
+                                    color: #fff;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    border: none;
+                                    -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+                                     -moz-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+                                     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);" ng-click="enviar()">{{pl_p9_5}}</button>
+                                    <!--input type="submit" class="form-control text-uppercase" ng-enable="true" value="Enviar"-->
+                                </div>
+                                <div class="col-md-2"></div>
+
+                                <div class="col-md-12">
+                                    <br>
+                                    <div class="alert alert-{{afirmation}}" class="container">
+                                        <strong>{{TypeMessaje}}</strong>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="map" data-wow-delay="0.3s"></div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <p>company © 2018 WalikiiSoft</p>
+            </div>
+        </div>
+    </footer>
+    <!-- paginas web -->
+    <div class="modal fade" id="paginasWeb">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Paginas web</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- indica -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                            <li data-target="#myCarousel" data-slide-to="6"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="images/carusel/4.jpg" style="width:100%; height: 100%">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/carusel/5.jpg" style="width:100%; height: 100%">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/carusel/2.jpg" style="width:100%; height: 100%">
+                            </div>
+                            <div class="item">
+                                <img src="images/carusel/3.jpg" style="width:100%; height: 100%">
+                            </div>
+                            <div class="item">
+                                <img src="images/carusel/0.jpg" style="width:100%; height: 100%">
+                            </div>
+                            <div class="item">
+                                <img src="images/carusel/1.jpg" style="width:100%; height: 100%">
+                            </div>
+                            <div class="item">
+                                <img src="images/carusel/6.jpg" style="width:100%; height: 100%">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+
+                        </a>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/control.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTbrrVZ4k5OnZV8e0hXShb9fTadlgBcC4&callback=initMap">
+    </script>
+</body>
+
+</html>
