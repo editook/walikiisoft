@@ -20,10 +20,9 @@
 
 <body ng-controller="controlador">
 
-    <div class="preloader">
-        <!-- recarga de pagina -->
+    <!--div class="preloader">
         <div class="sk-spinner sk-spinner-rotating-plane"></div>
-    </div>
+    </div-->
     <!-- barra navegador-->
 
     <nav class="navbar navbar-default navbar-fixed-top templatemo-nav" role="navigation">
@@ -219,14 +218,13 @@
                             <li>C</li>
                             <li>Java Swing</li>
                             <li>C#</li>
-                            <li>Python</li>
                             <li>Assembler</li>
                             <li>Java FX</li>
                             <li>Prolog</li>
                             <li>Arduino</li>
                             <li>Bash</li>
                         </ul>
-                        <button class="btn btn-primary text-uppercase">{{sp_p6_2}}</button>
+                        <button class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#aplicaciones">{{sp_p6_2}}</button>
                     </div>
                 </div>
                 <div class="col-md-3 wow fadeIn" data-wow-delay="0.6s">
@@ -242,7 +240,7 @@
                             <li>Maven</li>
                             <li>Express</li>
                         </ul>
-                        <button class="btn btn-primary text-uppercase">{{sp_p6_2}}</button>
+                        <button class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#server">{{sp_p6_2}}</button>
                     </div>
                 </div>
                 <div class="col-md-3 wow fadeIn" data-wow-delay="0.3s">
@@ -253,9 +251,8 @@
                         <ul>
                             <li>PostgreSQL</li>
                             <li>MySQL</li>
-                            <li>Oracle</li>
                         </ul>
-                        <button class="btn btn-primary text-uppercase">{{sp_p6_2}}</button>
+                        <button class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#database">{{sp_p6_2}}</button>
                     </div>
                 </div>
             </div>
@@ -405,48 +402,219 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div id="pw" class="carousel slide" data-ride="carousel">
                         <!-- indica -->
                         <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                            <li data-target="#myCarousel" data-slide-to="3"></li>
-                            <li data-target="#myCarousel" data-slide-to="4"></li>
-                            <li data-target="#myCarousel" data-slide-to="5"></li>
-                            <li data-target="#myCarousel" data-slide-to="6"></li>
+                            <li data-target="#pw" data-slide-to="0" class="active"></li>
+                            <li data-target="#pw" data-slide-to="1"></li>
+                            <li data-target="#pw" data-slide-to="2"></li>
+                            <li data-target="#pw" data-slide-to="3"></li>
+                            <li data-target="#pw" data-slide-to="4"></li>
+                            <li data-target="#pw" data-slide-to="5"></li>
+                            <li data-target="#pw" data-slide-to="6"></li>
+                            <li data-target="#pw" data-slide-to="7"></li>
+                            <li data-target="#pw" data-slide-to="8"></li>
+                            <li data-target="#pw" data-slide-to="9"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img src="images/carusel/4.jpg" style="width:100%; height: 100%">
+                                <img src="images/paginasweb/html1.png" style="width:100%; height: 100%">
                             </div>
 
                             <div class="item">
-                                <img src="images/carusel/5.jpg" style="width:100%; height: 100%">
+                                <img src="images/paginasweb/html5.png" style="width:100%; height: 100%">
                             </div>
 
                             <div class="item">
-                                <img src="images/carusel/2.jpg" style="width:100%; height: 100%">
+                                <img src="images/paginasweb/css3.png" style="width:100%; height: 100%">
                             </div>
                             <div class="item">
-                                <img src="images/carusel/3.jpg" style="width:100%; height: 100%">
+                                <img src="images/paginasweb/angularjs.png" style="width:100%; height: 100%">
                             </div>
                             <div class="item">
-                                <img src="images/carusel/0.jpg" style="width:100%; height: 100%">
+                                <img src="images/paginasweb/boosttrap.png" style="width:100%; height: 100%">
                             </div>
                             <div class="item">
-                                <img src="images/carusel/1.jpg" style="width:100%; height: 100%">
+                                <img src="images/paginasweb/javaScript.png" style="width:100%; height: 100%">
                             </div>
                             <div class="item">
-                                <img src="images/carusel/6.jpg" style="width:100%; height: 100%">
+                                <img src="images/paginasweb/php.png" style="width:100%; height: 100%">
+                            </div>
+                            <div class="item">
+                                <img src="images/paginasweb/nodejs.png" style="width:100%; height: 100%">
+                            </div>
+                            <div class="item">
+                                <img src="images/paginasweb/python.png" style="width:100%; height: 100%">
+                            </div>
+                            <div class="item">
+                                <img src="images/paginasweb/materialize.png" style="width:100%; height: 100%">
                             </div>
                         </div>
 
                         <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <a class="left carousel-control" href="#pw" data-slide="prev">
 
                         </a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <a class="right carousel-control" href="#pw" data-slide="next">
+
+                        </a>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- aplicaciones -->
+    <div class="modal fade" id="aplicaciones">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Aplicaciones</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="ap" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <ol class="carousel-indicators">
+                                <li data-target="#ap" data-slide-to="0" class="active"></li>
+                                <li data-target="#ap" data-slide-to="1"></li>
+                                <li data-target="#ap" data-slide-to="2"></li>
+                                <li data-target="#ap" data-slide-to="3"></li>
+                                <li data-target="#ap" data-slide-to="4"></li>
+                                <li data-target="#ap" data-slide-to="5"></li>
+                                <li data-target="#ap" data-slide-to="6"></li>
+                                <li data-target="#ap" data-slide-to="7"></li>
+                            </ol>
+                            <div class="item active">
+                                <img src="images/aplicaciones/arduino.png" style="width:100%; height: 100%">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/aplicaciones/assembler.png" style="width:100%; height: 100%">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/aplicaciones/bash.png" style="width:100%; height: 100%">
+                            </div>
+                            <div class="item">
+                                <img src="images/aplicaciones/c.png" style="width:100%; height: 100%">
+                            </div>
+                            <div class="item">
+                                <img src="images/aplicaciones/cpp.png" style="width:100%; height: 100%">
+                            </div>
+                            <div class="item">
+                                <img src="images/aplicaciones/java.png" style="width:100%; height: 100%">
+                            </div>
+                            <div class="item">
+                                <img src="images/aplicaciones/prolog.png" style="width:100%; height: 100%">
+                            </div>
+                            <div class="item">
+                                <img src="images/aplicaciones/swing.png" style="width:100%; height: 100%">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#ap" data-slide="prev">
+
+                        </a>
+                        <a class="right carousel-control" href="#ap" data-slide="next">
+
+                        </a>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- server -->
+    <div class="modal fade" id="server">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Servidores</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="serv" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <ol class="carousel-indicators">
+                                <li data-target="#serv" data-slide-to="0" class="active"></li>
+                                <li data-target="#serv" data-slide-to="1"></li>
+                                <li data-target="#serv" data-slide-to="2"></li>
+                                <li data-target="#serv" data-slide-to="3"></li>
+                            </ol>
+                            <div class="item active">
+                                <img src="images/server/apache.png" style="width:100%; height: 100%">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/server/glassfish.png" style="width:100%; height: 100%">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/server/maven.png" style="width:100%; height: 100%">
+                            </div>
+                            <div class="item">
+                                <img src="images/server/oracle.png" style="width:100%; height: 100%">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#serv" data-slide="prev">
+
+                        </a>
+                        <a class="right carousel-control" href="#serv" data-slide="next">
+
+                        </a>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- database -->
+    <div class="modal fade" id="database">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Base de datos</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="data" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <ol class="carousel-indicators">
+                                <li data-target="#data" data-slide-to="0" class="active"></li>
+                                <li data-target="#data" data-slide-to="1"></li>
+                            </ol>
+                            <div class="item active">
+                                <img src="images/database/postgrest.png" style="width:100%; height: 100%">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/database/mysql.png" style="width:100%; height: 100%">
+                            </div>
+
+
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#data" data-slide="prev">
+
+                        </a>
+                        <a class="right carousel-control" href="#data" data-slide="next">
 
                         </a>
                     </div>
